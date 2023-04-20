@@ -470,18 +470,18 @@ height: calc( 100% - 1px );
   @media screen and (max-width: 419px)
   {
      .toggle .line1 {
-        transform: rotate(-45deg) translate(-7px, 4px);
+        transform: rotate(-45deg) translate(-7px, 5px);
         
       }
       .toggle .line2 {
         opacity: 0;
       }
       .toggle .line3 {
-        transform: rotate(45deg) translate(-7px, -5px);
+        transform: rotate(45deg) translate(-8px, -6px);
         
       }
     .search-input {
-        height: 5vh;
+        height: 35px;
         width: 11rem;
         
     }
@@ -505,7 +505,7 @@ height: calc( 100% - 1px );
     }
     .hamburger div {
         width: 1.25rem;
-        height: 0.15rem;
+        height: 3.4px;
         margin: 0.35rem 0.38rem;
     }
     .line2
@@ -568,8 +568,4 @@ input[type="text"] {
         margin-right: 0;
     }
     
-  }
-  @media screen and (max-width: 354px)
-  {
-
   }
