@@ -1,0 +1,187 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #EAEAEA;
+  }
+  
+  .component1 {
+    display: grid;
+
+    background: black;
+     align-items: center;
+     text-align: center;
+  }
+  .Sign
+  {
+    display: block;
+    margin: auto;
+  }
+  .header
+  {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .Sign .sub-heading {
+    margin-top: -2vh;
+    font-family: 'Lato', sans-serif;
+
+  }
+  .component2 {
+    background: #EAEAEA;
+    display: grid;
+    align-items: center;
+    height: 100vh;
+  }
+  .heading {
+    color: white;
+    font-size: 45px;
+
+    font-weight: 700;
+
+  }
+ 
+  .inputs{
+    padding: 15px 30px;
+    margin-top: 2vh;
+  }
+
+  .inputs2 {
+    padding: 5px 30px;
+  }
+
+    label {
+    display: block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.3vh;
+
+  }
+  .inputs input, .inputs2 input
+  {
+    border: none;
+    background: #EAEAEA;
+    width: 93.5%;
+    height: 3.5vh;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  input[type="text"] {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  input[type="password"]
+    {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 15px;
+        font-weight: 500;
+    }
+  input:focus
+  {
+    outline: none;
+    border: none;
+  }
+  input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  .auth {
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+  }
+  .form {
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5vh;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .auth a {
+    text-decoration: none;
+    color: #858585;
+    cursor: pointer;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  .auth a span {
+    margin-left: 1.3rem;
+  }
+  .icon1
+  {
+    font-size: 15px;
+    position: absolute;
+    top: 7px;
+  }
+  .icon2
+  {
+    font-size: 16px;
+    position: absolute;
+    top: 6px;
+  }
+  .form .forgot{
+    padding: 10px 30px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 1vh;
+    color: #346BD4;
+    cursor: pointer;
+    font-family: 'Lato' , sans-serif;
+  }
+  .button1 {
+    width: 84%;
+    color: white;
+    padding: 9px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    background:black;
+    margin: 1vh auto 5vh auto;
+    text-align: center;
+  }
+  #footer {
+    color: #858585;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    margin: 4vh auto auto auto;
+  }
+  #footer span{
+    color: #346BD4;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 624px) {
+    .container {
+      grid-template-columns: repeat(1,1fr);
+    }
+    .component1 {
+      display: grid;
+      
+      background: black;
+       align-items: center;
+       text-align: center;
+    }
+    .component2 {
+   
+     width: 99%;
+     height: auto;
+     margin: auto auto 10vh auto;
+    }
+    .Sign {
+      margin-top: 1vh;
+      width: min-content;
+   
+    }
+    .form {
+      width: 355px;
+
+    }
+  }

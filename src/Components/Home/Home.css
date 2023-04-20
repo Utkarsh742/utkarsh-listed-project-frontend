@@ -1,0 +1,575 @@
+.outer-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* height: 126vh; */
+    background: #DDDDDD;
+    position: relative;
+}
+.hcontainer1 {
+ background: #000000;
+ margin: 4vh 3rem;
+height: calc( 100% - 1px );
+ border-radius: 30px;
+ position: relative;
+}
+.hamburger
+{
+    position:absolute;
+    left: 10;
+    background-color: #000000;
+    top: 5.39vh;
+    border-radius: 5px;
+    margin-top: 2vh;
+    display: none;
+   z-index: 9999;
+}   
+.animation {
+    transition: all 0.4s ease-in-out;
+}
+.hamburger div {
+    width: 1.9rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+.toggle {
+    position: absolute;
+    background-color: #000000;
+    /* height: 126vh; */
+    height: 100%;
+ 
+    z-index: 999; 
+}
+.toggle2 {
+    
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-7px, 5px);
+    
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-7px, -5.6px);
+    
+  }
+.line2
+{
+  width: 1.5rem !important;
+}
+.hheading {
+    color: white;
+}
+.align-left {
+ padding: 4vh 2.6rem;   
+
+}
+.navicons {
+    display: block;
+    line-height: 3.5;
+}
+.navicons div {
+    position: relative;
+    color:white;
+    font-weight: 200;
+}   
+.bottom-content {
+    color: #ffffff;
+    position: absolute;
+    bottom: 5vh;
+    left: 2.6rem;
+}
+.bottom-content p {
+    font-size: 13px;
+    color: #ffffff;
+}
+.hcontainer2 {
+    margin-right: 6vh;
+}
+.navbar
+{
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-between;
+    padding-right: 1.4vh;
+}
+
+.navbar .Logo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+
+    font-weight: 700;
+}
+.right-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-top: 0.3vh;
+    position: relative;
+    /* gap: 5rem; */
+    /* background-color: rebeccapurple; */
+    /* justify-content: space-evenly; */
+}
+.searchhere
+{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 1.4vh;
+}
+.search-btn {
+    position: absolute;
+    left: 165px;
+    width: 13px;
+    top: 10px;
+}
+.search-input {
+    position: relative;
+    border: none;
+    background: #f1eeee;
+    height: 4vh;
+    border-radius: 10px;
+}
+
+.notifyimages {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0rem;
+}
+.notify {
+    width: 17px;
+    height: 20px;   
+    margin:auto;
+}
+.search-input::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #B0B0B0;
+    padding-left: 10px;
+}
+.profile {
+    border-radius: 50px;
+}
+
+/* Cards Section */
+.cards-section {
+    display: grid;      
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+  
+.home-cards {
+    width: 15vw;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+}
+.card1
+{
+    background: #b8c4bc;
+    display: block  ;
+    flex-direction: column;
+}
+.card2
+{
+    background: #d0c4b4;
+    display: block  ;
+    flex-direction: column;
+}
+.card3
+{
+    background: #c8b4b4;
+    display: block  ;
+    flex-direction: column;
+}
+.card4
+{
+    background: #b8bcc4;
+    display: block  ;
+    flex-direction: column;
+}
+.card2 .card-image,.card3 .card-image {
+    width: 23px;
+}
+.card4 .card-image{
+    width: 34px;
+    height :2.8vh
+}
+.card-image {
+  width: 28px;
+  float: right;
+  padding: 17px 24px ;
+}
+.sub-portion {
+    padding-left: 1.2rem;
+}
+.home-sub { 
+ margin-top: 6.5vh;
+ font-size: 14px;
+  font-weight: 400;
+ font-family: 'Lato', sans-serif;
+
+}
+.card-price {
+    margin-top: -1.2vh;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* chart section */
+.chart-line {
+    width: 99%;
+    height: 32vh;
+    margin-top: 1.4vh;
+}   
+.chart-section {
+    background: #e9e6e6;
+    margin-top: 3vh;
+    border-radius: 20px;
+}
+.chart-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -3vh;
+    margin-right: 2rem;
+}
+
+.legend {
+    display:flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 600;
+    gap: 2rem;
+}
+.lcolor
+{
+    margin-top:3px;
+}
+.cover-content {
+    padding: 1.4vh 2.5rem;
+}
+.details img {
+    margin-bottom: 0.2vh;
+}
+.cover-content h2,.schedule h2, .products h2 {
+  font-size: 19px;
+  
+}
+.details {
+    
+    font-size: 14px;
+    color: #858585;
+
+}
+/* general details sections */
+.general {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3vh;
+    gap: 4rem;
+}
+.products {
+    background: #eae7e7;
+    border-radius: 20px;
+}
+.schedule {
+    background: #eae7e7;   
+    border-radius: 20px;
+}
+.general-cover {
+    padding: 1.4vh 2.5rem;
+}
+.head-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.piechart {
+    display: flex;
+    gap: 3rem;
+}
+.pie {
+ width: 35%;
+ padding: 2vh;
+}
+.pie-details {
+    display: block;
+}
+.pie-details h3 {
+    display: flex;
+    align-items: center;
+    
+    font-size: 15px;
+    font-weight: 700;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #98D89E;
+    margin-right: 10px;
+}
+
+.subsections p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -1.5vh;
+    margin-left: 21px;
+    font-family: 'Lato' , sans-serif;
+    color: #858585;
+}
+.timeline {
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.pie-details h5 {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    color:#605f5f;
+    font-family: 'Lato' , sans-serif;
+    margin-bottom: 1.8vh;
+}
+.pie-details .para{
+  color: #999999;
+  font-size: 12px;
+  margin-top: -0.8vh;
+  font-weight: 400;
+  font-family: 'Lato' , sans-serif;
+  letter-spacing: 0.2px;
+}
+.bar {
+    height: 70px;
+    margin-top: 2vh;
+    width: 5px;
+    background-color: lightgreen;
+    
+}
+
+/* Media query for cards */
+@media screen and (max-width: 1426px) {
+   .piechart {
+    gap: 1rem;
+   }
+}
+@media screen and (max-width: 1211px) {
+    .hcontainer1 {
+        margin: 4vh 1rem;
+    }
+    }
+@media screen and (max-width:1001px) {
+     .hcontainer2 {
+        margin:1vh auto auto auto;
+     }
+    .hcontainer1 {
+        margin: 0;
+        border-radius: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    .outer-container {
+       display: flex;
+    }
+    .align-left {
+        padding: 4.5vh 3rem;   
+       }
+    .hamburger {
+        display: block;
+    }
+    .visible {
+        display: none;
+    }
+    .navbar .Logo h1 {
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .cards-section {
+      /* grid-template-columns: repeat(3, 1fr); */
+      gap:1rem; 
+    }
+    .card-price {
+        font-size: 20px !important;    
+    }
+    .home-sub { 
+        font-size: 11px !important;
+    }
+    .general {
+        gap: 1rem;
+    }   
+  }
+  
+  @media screen and (max-width: 852px) {
+    .cards-section {
+      grid-template-columns: repeat(3, 2fr);
+      gap: 1rem;
+    }
+    .card-price {
+        font-size: 15px !important;    
+    }
+    .home-sub { 
+        font-size: 8px !important;
+    }
+    .home-cards {
+        width: 25vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 807px) {
+    .cards-section {
+      grid-template-columns:repeat(2, 2fr);;
+      justify-content: center;
+      gap: 1rem;    
+    }
+    .home-cards {
+        width: 35vw !important;
+    }
+  }
+  @media screen and (max-width: 790px)
+  {
+    
+    .search-input {
+        width: 8rem;
+    }
+    .search-btn {
+        left: 110px;
+    }
+    /* .hcontainer2 {
+        margin-right: 3vh;
+    }
+    .hcontainer1
+    {
+        margin: 4vh 1rem;
+    } */
+  }
+  @media screen and (max-width: 660px)
+  {
+    .home-cards {
+        width: 40vw !important;
+    }
+    .cards-section {
+        grid-template-columns:repeat(2, 2fr);;
+        justify-content: center;
+        gap: 1rem;    
+        margin-top: 3.5vh ;
+      }
+      .general {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3vh;
+    }
+  }
+  @media screen and (max-width: 419px)
+  {
+     .toggle .line1 {
+        transform: rotate(-45deg) translate(-7px, 4px);
+        
+      }
+      .toggle .line2 {
+        opacity: 0;
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-7px, -5px);
+        
+      }
+    .search-input {
+        height: 5vh;
+        width: 11rem;
+        
+    }
+    .notifyimages {
+        margin-right: 8px;
+    }
+    .search-btn {
+        top: 12px;
+       left:155px
+    }
+    .notify {
+        width: 19px;
+        height: 22px;
+        margin: auto;
+    }
+    .navbar .Logo h1 {
+        position: absolute;
+        top: 11vh;
+        font-size: 22px;
+        left: -28px;
+    }
+    .hamburger div {
+        width: 1.25rem;
+        height: 0.15rem;
+        margin: 0.35rem 0.38rem;
+    }
+    .line2
+    {
+        width: 1.0rem !important;
+    }
+    .hamburger
+{
+    left: 16px;
+    top: 4.5vh;
+    margin-top: 2vh;
+} 
+.cards-section {
+    margin-top: 9vh;
+  }
+  .align-left {
+    padding: 4.5vh 4rem;
+}
+.chart-section
+{
+    margin:3vh 1rem
+}
+.products,.schedule {
+    margin-inline: 1rem;
+}
+ .general {
+    margin-bottom: 2vh;
+ }
+ .cover-content {
+    padding: 1.4vh 1.5rem;
+}
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+    }
+  @media screen and (max-width: 400px)
+  {
+    .cards-section {
+        grid-template-columns:repeat(1, 1fr);
+      }
+      .home-cards {
+        width: 90% !important;
+        height: 13.5vh;
+    }
+    .home-sub {
+        font-size: 14px !important;
+        margin-top: 3vh;
+    }
+    .card-price {
+        font-size: 20px !important;
+    }
+    .chart-line  {
+        width:95%;
+    }
+    
+    .chart-details {
+        margin-top: -3vh;
+        margin-right: 0;
+    }
+    
+  }
+  @media screen and (max-width: 354px)
+  {
+
+  }
